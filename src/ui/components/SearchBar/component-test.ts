@@ -3,7 +3,7 @@ import { render, setupRenderingTest } from '@glimmer/test-helpers';
 
 const { module, test } = QUnit;
 
-module('Component: SearchForm', function(hooks) {
+module('Component: SearchBar', function(hooks) {
   setupRenderingTest(hooks);
 
   test('it renders', async function(assert) {
@@ -16,7 +16,7 @@ module('Component: SearchForm', function(hooks) {
      * ```
      * this.foo = { foo: '123' };
      *
-     * await render(hbs`<SearchForm @foo={{this.foo}} />`)
+     * await render(hbs`<SearchBar @foo={{this.foo}} />`)
      *
      * // or
      *
@@ -26,7 +26,7 @@ module('Component: SearchForm', function(hooks) {
      * assert.dom('p').text('bar');
      * ```
      */
-    await render(hbs`<SearchForm />`);
+    await render(hbs`<SearchBar />`);
     assert.ok(this.containerElement.querySelector('div'));
   });
 });
