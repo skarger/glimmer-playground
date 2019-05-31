@@ -14,6 +14,6 @@ app.registerInitializer({
   }
 });
 
-app.renderComponent('GlimmerPlayground', containerElement, null);
+app.renderComponent('Main', containerElement, null);
 
 app.boot();
